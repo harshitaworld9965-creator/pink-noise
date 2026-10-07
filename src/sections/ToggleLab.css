@@ -1,0 +1,23 @@
+.toggle-lab {
+  display: flex;
+  flex-direction: column;
+  gap: 50vh;          /* big breathing room between experiments */
+  padding-bottom: 50vh;
+}
+
+.tbox {
+  width: min(90%, 520px);
+  padding: 2rem;
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--lime);
+  border-radius: 0.5rem;
+  will-change: transform, opacity;
+}
+
+.tbox--2 { background: var(--pink); color: var(--ink); }
+.tbox--3 { background: var(--lime); color: var(--ink); }
+.tbox--4 { background: var(--cream); color: var(--pink-deep); }
+.tbox--5 { background: var(--pink-deep); color: var(--cream); }

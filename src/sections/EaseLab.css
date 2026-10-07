@@ -1,0 +1,48 @@
+.ease-lab__lanes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.lane {
+  position: relative;
+  height: 48px;
+  border-bottom: 2px dashed rgba(26, 11, 18, 0.35);
+  display: flex;
+  align-items: center;
+}
+
+.lane__name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--ink);
+  border: 3px solid var(--lime);
+  will-change: transform;
+}
+
+.ease-lab__replay {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background: var(--ink);
+  color: var(--lime);
+  border-radius: 999px;
+  transition: transform 0.2s;
+}
+
+.ease-lab__replay:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
