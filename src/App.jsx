@@ -3,8 +3,8 @@ import Manifesto from "./sections/Manifesto.jsx";
  import StickerWall from "./sections/StickerWall.jsx";
 import ScrubGallery from "./sections/ScrubGallery.jsx";
 import ToggleLab from "./sections/ToggleLab.jsx";
-// import EaseLab from "./sections/EaseLab.jsx";
-// import Outro from "./sections/Outro.jsx";
+import EaseLab from "./sections/EaseLab.jsx";
+import Outro from "./sections/Outro.jsx";
 
 export default function App() {
   return (
@@ -14,8 +14,8 @@ export default function App() {
       <StickerWall /> 
       <ScrubGallery /> 
       <ToggleLab /> 
-      {/* <EaseLab /> */}
-      {/* <Outro /> */}
+      <EaseLab /> 
+      <Outro /> 
     </main>
   );
 }

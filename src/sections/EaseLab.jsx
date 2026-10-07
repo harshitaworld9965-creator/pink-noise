@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import "./EaseLab.css";
 
@@ -22,7 +23,6 @@ export default function EaseLab() {
         gsap.to(".dot", { x: 0, duration: 0.6, ease: "power2.inOut" });
       };
 
-      // A ScrollTrigger with no tween — just a sensor that calls functions.
       ScrollTrigger.create({
         trigger: ".ease-lab__lanes",
         start: "top 60%",
@@ -30,7 +30,6 @@ export default function EaseLab() {
         onLeaveBack: reset,
       });
 
-      // Clicking the button replays the race without scrolling.
       const button = container.current.querySelector(".ease-lab__replay");
       button.addEventListener("click", () => {
         gsap.to(".dot", { x: 0, duration: 0.3, onComplete: race });

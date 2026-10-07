@@ -1,0 +1,52 @@
+.outro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  overflow: hidden;       /* the giant BYE must not spill out */
+}
+
+.outro__bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;   /* centres it; GSAP's scale/rotation stay separate */
+  font-family: var(--font-display);
+  font-size: 40vw;
+  color: var(--pink);
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform;
+}
+
+.outro .label,
+.outro__words,
+.outro__button {
+  position: relative;
+  z-index: 1;             /* sit above the background word */
+}
+
+.outro__words {
+  display: flex;
+  flex-direction: column;
+  color: var(--pink);
+}
+
+.outro__word {
+  display: inline-block;  /* needed so y and rotation work */
+  will-change: transform, opacity;
+}
+
+.outro__button {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  background: var(--lime);
+  color: var(--ink);
+  border-radius: 999px;
+  border: 4px solid var(--pink);
+  will-change: transform;
+}
