@@ -1,0 +1,27 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__word {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero__letter {
+  display: inline-block;      /* required for transforms */
+  transform-origin: 50% 80%;  /* rotate around the baseline, not the centre */
+  cursor: crosshair;
+}
+
+.hero__hint {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}

@@ -1,0 +1,17 @@
+.manifesto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.manifesto__line {
+  white-space: nowrap;
+  color: var(--pink);
+}
+
+.manifesto__body {
+  max-width: 34ch;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
